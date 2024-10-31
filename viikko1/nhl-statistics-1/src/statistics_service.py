@@ -29,13 +29,13 @@ class StatisticsService:
 
     def top(self, how_many, sort_by = SortBy.POINTS):
         # metodin käyttämä apufufunktio voidaan määritellä näin
-        def get_sort_by_function(player, sort_by :SortBy):
-            if sort_by == SortBy.POINTS:
-                return player.points
-            elif sort_by == SortBy.ASSISTS:
-                return player.assists
-            elif sort_by == SortBy.GOALS:
+        def get_sort_by_function(player, sort_by: SortBy):
+            if sort_by == SortBy.GOALS:
                 return player.goals
+            if sort_by == SortBy.ASSISTS:
+                return player.assists
+            else:
+                return player.points
 
         sorted_players = sorted(
             self._players,
