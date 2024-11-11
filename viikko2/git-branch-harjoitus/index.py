@@ -11,12 +11,5 @@ print(f"{x} + {y} = {summa(x, y)}")
 print(f"{x} - {y} = {erotus(x, y)}") 
 print(f"{x} * {y} = {tulo(x, y)}") 
 
-<<<<<<< HEAD
 logger("lopetetaan ohjelma")
 print("goodbye!") # muutos
-=======
-logger("lopetetaan")
-print("goodbye!")
-
-# muutos
->>>>>>> 1e2e1bcb71a535169db96725b75437452b27d418
