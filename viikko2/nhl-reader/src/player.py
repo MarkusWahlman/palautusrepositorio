@@ -4,15 +4,10 @@ class Player:
         self.nationality = player_data['nationality']
         self.assists = player_data['assists']
         self.goals = player_data['goals']
+        self.total_points = self.assists + self.goals
         self.team = player_data['team']
         self.games = player_data['games']
         self.id = player_data['id']
     
     def __str__(self):
-        return (f"Name: {self.name}\n"
-                f"Nationality: {self.nationality}\n"
-                f"Team: {self.team}\n"
-                f"Games Played: {self.games}\n"
-                f"Goals: {self.goals}\n"
-                f"Assists: {self.assists}\n"
-                f"Player ID: {self.id}")
+            return f"{self.name:<20} {self.team}  {self.goals} + {self.assists} = {self.total_points}"
