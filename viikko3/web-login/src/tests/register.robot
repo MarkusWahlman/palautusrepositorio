@@ -48,6 +48,30 @@ Register With Username That Is Already In Use
     Submit Registration
     Registration Should Fail With Message  User with username kalle already exists
 
+Login After Successful Registration
+    Set Username  toimivakayttaja
+    Set Password  Salasana1!
+    Confirm Password  Salasana1!
+    Submit Registration
+    Log Out
+    Go To Login Page
+    Set Username  toimivakayttaja
+    Set Password  Salasana1!
+    Click Button  Login
+    Login Should Succeed
+
+Login After Failed Registration
+    Set Username  toimivakayttaja
+    Set Password  huonosalasana
+    Confirm Password  huonosalasana
+    Submit Registration
+    Log Out
+    Go To Login Page
+    Set Username  kalle
+    Set Password  kalle123
+    Click Button  Login
+    Login Should Succeed
+
 *** Keywords ***
 Registration Should Succeed
     Welcome Page Should Be Open
@@ -59,18 +83,6 @@ Registration Should Fail With Message
 
 Submit Registration
     Click Button  Register
-
-Set Username
-    [Arguments]  ${username}
-    Input Text  username  ${username}
-
-Set Password
-    [Arguments]  ${password}
-    Input Password  password  ${password}
-
-Confirm Password
-    [Arguments]  ${password_confirmation}
-    Input Password  password_confirmation  ${password_confirmation}
 
 Reset Application Create User And Go To Register Page
     Reset Application

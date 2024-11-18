@@ -8,6 +8,7 @@ ${DELAY}         0.5 seconds
 ${HOME_URL}      http://${SERVER}
 ${LOGIN_URL}     http://${SERVER}/login
 ${REGISTER_URL}  http://${SERVER}/register
+${MAIN_URL}      http://${SERVER}/ohtu
 ${BROWSER}       chrome
 ${HEADLESS}      false
 
@@ -46,3 +47,34 @@ Go To Register Page
 
 Go To Starting Page
     Go To  ${HOME_URL}
+
+Go To Main Page
+    Go To  ${MAIN_URL}
+
+Log Out
+    Go To Main Page
+    Click Button  Logout
+
+Login Should Succeed
+    Main Page Should Be Open
+
+Login Should Fail With Message
+    [Arguments]  ${message}
+    Login Page Should Be Open
+    Page Should Contain  ${message}
+
+
+Submit Credentials
+    Click Button  Login
+
+Set Username
+    [Arguments]  ${username}
+    Input Text  username  ${username}
+
+Set Password
+    [Arguments]  ${password}
+    Input Password  password  ${password}
+
+Confirm Password
+    [Arguments]  ${password_confirmation}
+    Input Password  password_confirmation  ${password_confirmation}
