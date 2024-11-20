@@ -3,3 +3,6 @@
 **/.pytest_cache/
 **/.coverage
 **/htmlcov/
+output.xml
+log.html
+report.html
