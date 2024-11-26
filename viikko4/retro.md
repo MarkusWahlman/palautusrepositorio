@@ -3,3 +3,4 @@ Retrospektiivitekniikat ovat hyödyllisiä tekniikoita jotka auttaa tiimejä arv
 Glad, Sad, Mad -tekniikka painottuu tunteiden kartoittamiseen. Tiimin jäsenet jakavat, mikä heidän mielestään sujui hyvin (Glad), mikä aiheutti pettymyksiä tai ongelmia (Sad)tai aiheutti turhautumista tai suuttumusta (Mad).
 
 Molemmat tekniikat tarjoavat omia keinoja tiimin jatkuvaan kehittymiseen.
+
