@@ -4,3 +4,4 @@ Glad, Sad, Mad -tekniikka painottuu tunteiden kartoittamiseen. Tiimin jäsenet j
 
 Molemmat tekniikat tarjoavat omia keinoja tiimin jatkuvaan kehittymiseen.
 
+
