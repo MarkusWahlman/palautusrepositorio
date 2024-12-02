@@ -1,14 +1,12 @@
-import unittest
 from int_joukko import IntJoukko
-
 
 def main():
     joukko = IntJoukko()
 
-    joukko.lisaa(1)
-    joukko.lisaa(2)
-    joukko.lisaa(3)
-    joukko.lisaa(2)
+    joukko.add(1)
+    joukko.add(2)
+    joukko.add(3)
+    joukko.add(2)
 
     print(joukko.to_int_list())
 
